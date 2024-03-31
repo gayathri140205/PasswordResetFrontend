@@ -1,0 +1,25 @@
+body {
+  font-family: Edu TAS Beginner;
+  background-color:  rgba(24, 129, 145, 0.578);
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+}
+
+.nav-item a.nav-link:hover {
+  background-color: #343a40;
+  transition: all 0.3s;
+}
+
+/* Signup.css */
+.form-container {
+  background: rgba(33, 80, 87, 0.578);
+  padding: 10px;
+  border-radius: 15px;
+}
+.header-container {
+  background: rgba(4, 24, 32, 0.819);
+  padding: 20px;
+  border-radius: 5px;
+}
