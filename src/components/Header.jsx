@@ -6,12 +6,10 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 const Header = () => {
   const userName = localStorage.getItem('userName');
-  const avatar = localStorage.getItem('avatar');
   const location = useLocation();
 
   const handleLogout = () => {
     localStorage.removeItem('token');
-    localStorage.removeItem('avatar');
     localStorage.removeItem('userName');
     window.location.href = '/login';
   };
@@ -53,12 +51,6 @@ const Header = () => {
             <>
             <li className="nav-item">
             <h4><Link className="nav-link text-white" to="/dashboard">Dashboard</Link></h4>
-          </li>
-          <li className="nav-item text-white">
-            <h4><Link className="nav-link" to="#">
-              <img src={avatar} width="100" height="80" alt="Avatar" />
-              <span className='text-white'>{userName}</span>
-            </Link></h4>
           </li>
           <li className="nav-item">
             <h4><Link className="nav-link text-white" type='button' onClick={handleLogout}>Logout</Link></h4>
